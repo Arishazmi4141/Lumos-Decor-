@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decolite Navbar</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <!-- Left Menu -->
+    <div class="menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+        <span class="menu-text">Menu</span>
+    </div>
+
+    <!-- Center Logo -->
+    <div class="logo">Lumos Decor</div>
+
+    <!-- Right Icons -->
+    <div class="nav-icons">
+        <!-- Login / Signup -->
+        <div class="auth-icons">
+            <i class="fas fa-user" title="Login"></i>
+            <span class="slash">/</span>
+            <i class="fas fa-user-plus" title="Signup"></i>
+        </div>
+
+        <!-- Search -->
+        <i class="fas fa-search" title="Search"></i>
+
+        <!-- Wishlist -->
+        <i class="fas fa-heart" title="Wishlist"></i>
+
+        <!-- Cart -->
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart" title="Cart"></i>
+        </div>
+
+        <!-- Currency Dropdown -->
+        <select class="currency">
+            <option>INR</option>
+        </select>
+    </div>
+</header>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- crousel -->
+
+<div class="hero-slider">
+    <div class="slide active" style="background-image: url('image/855a1433-a8f4-4579-a2ae-e54a2bb05fa6.jpg');">
+        <div class="slide-content">
+            <p class="subtitle">Don't Miss Today's Featured Deals</p>
+            <h1 class="title">DECORATIVE LIGHTING</h1>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </div>
+    <div class="slide" style="background-image: url('image/pngtree-3d-render-of-an-interior-composition-showcasing-a-stylish-sofa-image_13555861.png');">
+        <div class="slide-content">
+            <p class="subtitle">Exclusive Discounts On Modern Lamps</p>
+            <h1 class="title">BRIGHTEN YOUR HOME</h1>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </div>
+    <div class="slide" style="background-image: url('image/luxury-living-room-dark-green-wall-background-with-a-cozy-green-armchair-in-living-room-ai-generated-free-photo.jpg');">
+        <div class="slide-content">
+            <p class="subtitle">Special Offers For Every Product</p>
+            <h1 class="title">LIGHT UP YOUR SPACE</h1>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </div>
+
+    <div class="dots"></div>
+</div>
+
+<section class="collections">
+    <div class="collection-box">
+        <div class="text">
+            <h3>New Collection</h3>
+            <p>Fancy Innovations</p>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="image">
+            <img src="image/shop05.webp" alt="New Collection">
+        </div>
+    </div>
+    <div class="collection-box">
+        <div class="text">
+            <h3>Best Collection</h3>
+            <p>3D Innovations</p>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="image">
+            <img src="image/shop07.webp" alt="Best Collection">
+        </div>
+    </div>
+    <div class="collection-box">
+        <div class="text">
+            <h3>Trendy Collection</h3>
+            <p>Stylish Innovations</p>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="image">
+            <img src="image/shop08.webp" alt="Trendy Collection">
+        </div>
+    </div>
+</section>
+
+
+<section class="trending-products">
+  <div class="container">
+    <p class="subheading">Tenor Brand's</p>
+    <h2 class="section-title">TRENDING PRODUCTS</h2>
+
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop01.webp" alt="Buffet Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Buffet Lamp</h3></a>
+        <p class="price">Rs. 810.00</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop02.webp" alt="Arc Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Arc Lamp</h3></a>
+        <p class="price">Rs. 570.00</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop03.webp" alt="Tripod Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title" style="color:var(--accent)">Tripod Lamp</h3></a>
+        <p class="price">Rs. 670.00</p>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop04.webp" alt="Swing Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Swing Lamp</h3></a>
+        <p class="price">Rs. 520.00</p>
+      </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop05.webp" alt="Buffet Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Piano Lamp</h3></a>
+        <p class="price">Rs. 850.00</p>
+      </div>
+
+        <!-- Product 6 -->
+            <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop06.webp" alt="Buffet Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Gooseneck Lamp</h3></a>
+        <p class="price">Rs. 970.00</p>
+      </div>
+
+       <!-- Product 7 -->
+            <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop07.webp" alt="Buffet Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Boom Lamp</h3></a>
+        <p class="price">Rs. 760.00</p>
+      </div>
+
+       <!-- Product 8 -->
+            <div class="product-card">
+        <div class="product-image">
+          <img src="image/shop08.webp" alt="Buffet Lamp">
+          <div class="overlay-icons" aria-hidden="true">
+            <button class="icon-btn" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="icon-btn" title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <a href="#" class="title-link"><h3 class="product-title">Floor Lamp</h3></a>
+        <p class="price">Rs. 920.00</p>
+      </div>
+
+    </div> <!-- product-grid -->
+  </div>
+</section>
+
+
+<section class="banner-section">
+  <!-- Left - Flash Sale -->
+  <div class="banner-box green">
+    <p class="small-text">Flash Sale</p>
+    <h2 class="title">Top Brands</h2>
+    <p class="desc">Starting @ Rs 199.99</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+
+  <!-- Middle - Hot Sale -->
+  <div class="banner-box dark">
+    <p class="small-text">Hot Sale</p>
+    <h2 class="title big">UPTO 70%</h2>
+    <p class="desc">Hurry! Limited Stock</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+
+  <!-- Right - Decoration Light -->
+  <div class="banner-box image-box">
+    <img src="image/images222.jpg" alt="Decoration Light">
+    <div class="overlay">
+      <h2 class="title">Decoration Light In Dark Night</h2>
+      <p class="desc">Sed libero enim sed faucibus turpis in eu. Lorem ipsum dolor sit amet consectetur.</p>
+      <a href="#" class="btn1">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog-section">
+  <div class="blog-header">
+    <p class="sub-title">Trending News</p>
+    <h2 class="main-title">OUR BLOG</h2>
+  </div>
+
+  <div class="blog-container">
+    <!-- Blog Card 1 -->
+    <div class="blog-card">
+      <img src="image/blog07.jpg" alt="Lights">
+      <div class="blog-content">
+        <p class="tags">Lights, Party Lights</p>
+        <h3 class="blog-title">A Natural Scene Towards The Lights</h3>
+        <p class="blog-desc">
+          Hnis nullam sagittis. Suspendisse pulvinar augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestib...
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="blog-card">
+      <img src="image/blog02_4d1205d7-9dab-4959-9b5e-155be6be45f0.jpg" alt="Salt Lamps">
+      <div class="blog-content">
+        <p class="tags">Lights, Party Lights</p>
+        <h3 class="blog-title">Trendy And Easy To Use Friendly Design</h3>
+        <p class="blog-desc">
+          Lorem cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, preti...
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="blog-card">
+      <img src="image/blog03_82ae410c-6c4d-4797-a41f-67fba626dd94.jpg" alt="Lamp Decoration">
+      <div class="blog-content">
+        <p class="tags">Lights, Party Lights</p>
+        <h3 class="blog-title">Handmade Table Lamp Decoration</h3>
+        <p class="blog-desc">
+          Marqus cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pret...
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sale-section">
+  <!-- Left Image -->
+  <div class="sale-img left">
+    <img src="image/custom-img.jpg" alt="Left Image">
+  </div>
+
+  <!-- Right Image -->
+  <div class="sale-img right">
+    <img src="image/custom-img-two.jpg" alt="Right Image">
+  </div>
+
+  <!-- Center Green Box -->
+  <div class="sale-box">
+    <h2>SALE UP TO 50%</h2>
+    <p class="highlight">Lighting Accessories</p>
+    <p>Here to bring your life style to the next level.</p>
+  </div>
+</section>
+
+<!-- Logos Section -->
+<section class="brand-logos">
+  <img src="image/brlog01.png" alt="Logo 1">
+  <img src="image/brlog04.png" alt="Logo 2">
+  <img src="image/brlog05.png" alt="Logo 3">
+  <img src="image/brlog06.png" alt="Logo 4">
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>ADDRESS</h4>
+      <p>📍 No: 58 A, laxmi Nagar,<br>New Delhi, Delhi, India </p>
+      <p>📞 0000 - 123 - 456789</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>INFORMATION</h4>
+      <ul>
+        <li><a href="#">Help & Contact Us</a></li>
+        <li><a href="#">Return & Refunds</a></li>
+        <li><a href="#">Online Stores</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>HELP</h4>
+      <ul>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Deliveries</a></li>
+        <li><a href="#">Faq Page</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>NEWSLETTER</h4>
+      <p>Be the first who learns about our great promotions!</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Your email address">
+        <button type="submit">→</button>
+      </form>
+      <!-- <div class="payment-icons">
+        <img src="visa.png" alt="Visa">
+        <img src="mastercard.png" alt="MasterCard">
+        <img src="amex.png" alt="Amex">
+        <img src="paypal.png" alt="PayPal">
+        <img src="discover.png" alt="Discover">
+      </div> -->
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Term & Conditions</a>
+      <a href="#">Policy</a>
+      <a href="#">Map</a>
+    </div>
+
+    <div class="footer-logo">Lumos Decor</div>
+
+    <div class="footer-social">
+      <span>Follow Us On Social</span>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2025 Lumos Decor Design themes by Arish Azmi</p>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
